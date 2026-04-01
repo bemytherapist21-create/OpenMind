@@ -18,12 +18,12 @@
         },
         {
             "src": "/(.*)",
-            "dest": "/public/$1",
+            "dest": "/$1",
             "continue": true
         },
         {
             "src": "/(.*)",
-            "dest": "/public/index.html"
+            "dest": "/index.html"
         }
     ],
     "env": {
