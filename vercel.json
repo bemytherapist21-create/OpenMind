@@ -25,7 +25,7 @@
             "continue": true
         },
         {
-            "src": "/(.*)",
+            "src": "/(?!api|sandbox|v1|.*\\.(?:png|jpg|jpeg|gif|svg|ico|css|js|json|webmanifest)$)(.*)",
             "dest": "/index.html"
         }
     ],
