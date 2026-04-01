@@ -4,7 +4,7 @@
     "public": true,
     "functions": {
         "api/*.py": {
-            "runtime": "vercel-python@0.1.0"
+            "runtime": "python"
         }
     },
     "routes": [
