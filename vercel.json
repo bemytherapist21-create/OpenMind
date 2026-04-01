@@ -1,0 +1,32 @@
+{
+    "version": 2,
+    "framework": null,
+    "public": true,
+    "functions": {
+        "api/*.py": {
+            "runtime": "vercel-python@0.1.0"
+        }
+    },
+    "routes": [
+        {
+            "src": "/api/(.*)",
+            "dest": "/api/index.py"
+        },
+        {
+            "src": "/v1/(.*)",
+            "dest": "/api/index.py"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/public/$1",
+            "continue": true
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/public/index.html"
+        }
+    ],
+    "env": {
+        "OCI_VM_URL": "https://openmind.theeverythingai.com"
+    }
+}
