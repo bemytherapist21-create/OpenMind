@@ -2,11 +2,6 @@
     "version": 2,
     "framework": null,
     "public": true,
-    "functions": {
-        "api/*.py": {
-            "runtime": "python"
-        }
-    },
     "routes": [
         {
             "src": "/api/(.*)",
